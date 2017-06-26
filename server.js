@@ -17,8 +17,6 @@ var Store = require('connect-redis')(session);
 app.use(session({
     store: new Store({
         url : "redis://h:pc222d1f57e904c664e9afab94cdee3cd7a67e54abce9d412cb8d008de85e2555@ec2-34-249-251-118.eu-west-1.compute.amazonaws.com:30899",
-        // nectttl: 3600,
-        // host: 'localhost',
         port: 6379
     }),
     resave: false,

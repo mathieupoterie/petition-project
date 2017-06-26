@@ -307,4 +307,3 @@ module.exports.getCitizens = getCitizens;
 module.exports.checkEditPageInfo = checkEditPageInfo;
 module.exports.checkRegisteringInfo = checkRegisteringInfo;
 module.exports.signPetition = signPetition;
-module.exports.likeImage = likeImage;
