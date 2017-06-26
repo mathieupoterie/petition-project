@@ -1,0 +1,17 @@
+{{> gif}}
+
+<div  id="existing-email">
+    <p>{{passworderror}}</p>
+    <p>{{existingemail}}</p>
+</div>
+
+
+<form class="register-form" method="post">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="register">
+
+        {{>logform}}
+        <button id="button" type="submit">Log In</button>
+    </div>
+
+</form>

@@ -1,0 +1,24 @@
+<h1>Can you imagine a world without burrito ? No right ?</h1>
+<h1>Join our campaign against barbaric food and make of the burrito a public good!</h1>
+<form class="register-form" method="post">
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <p><a id="existing-email" href="/login">{{existingemail}}</a></p>
+    <p id="password_err">{{password_err}}</p>
+    <div class="register">
+        <label>
+            <input type="text" name="first" value="">
+            <p>First Name</p>
+        </label>
+        <label>
+            <input type="text" name="last" value="">
+            <p>Last Name</p>
+        </label>
+        {{>logform}}
+        <button id="button" type="submit">Sign Up</button>
+    </div>
+    <p id="advert">If you are already member, please <a href="/login">Log In.</a></p>
+
+
+</form>
+
+{{> gif}}

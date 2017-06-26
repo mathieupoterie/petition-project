@@ -1,0 +1,17 @@
+{{#error}}
+<div class="error"><h1>Bad! Bad! try again</h1><p>{{.}}</p></div>
+{{/error}}
+
+<form id="form" method="post">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <label>
+        <input id="hidden" type="hidden" name="sig" value="">
+    </label>
+    <div>
+        <canvas id="canvas"></canvas>
+        <p>sign here</p>
+
+    </div>
+    <button id="button" type="submit">Submit</button>
+
+</form>

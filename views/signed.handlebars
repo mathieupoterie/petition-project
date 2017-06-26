@@ -1,0 +1,18 @@
+{{#signed}}
+<h3 id="already-signed">{{.}}</h3>
+{{/signed}}
+
+<h3 id="profile-updated">{{profileUpdated}}</h3>
+
+<h1>Thank you <span>{{firstName}}</span> for signing our petition to make the world a better place ...!</h1>
+
+{{> gif}}
+
+<div>
+
+    <a id="signers-link" href="/signers">See all {{signersNumber}} signers</a>
+    <p id="congrat-signature">... and nice signature !</p>
+    <img id="img-canvas" src="{{signatureSrc}}">
+    <a id="delete-signature" href="/delete">Delete your signature</a>
+
+</div>

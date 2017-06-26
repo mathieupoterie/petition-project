@@ -1,0 +1,44 @@
+{{> gif}}
+
+<h1>Edit your profile</h1>
+<p id="password_err">{{password_err}}</p>
+
+<form class="register-form" method="post">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    {{#results}}
+    <div class="register">
+        <label>
+            <input type="text" name="first_name" value="{{first_name}}">
+            <p>First Name</p>
+        </label>
+        <label>
+            <input type="text" name="last_name" value="{{last_name}}">
+            <p>Last Name</p>
+        </label>
+        <label>
+            <input type="text" name="email" value="{{email}}">
+            <p>Email Adress</p>
+        </label>
+        <label>
+            <input type="password" name="password" value="">
+            <p>Password</p>
+        </label>
+        <label>
+            <input type="text" name="age" value="{{age}}">
+            <p>Age</p>
+        </label>
+        <label>
+            <input type="text" name="city" value="{{city}}">
+            <p>City</p>
+        </label>
+        <label>
+            <input type="url" name="homepage" value="{{url}}">
+            <p>Homepage</p>
+        </label>
+        <button id="button" type="submit">Update</button>
+    </div>
+
+
+    {{/results}}
+
+</form>

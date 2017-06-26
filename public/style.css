@@ -1,0 +1,344 @@
+body{
+    background: aquamarine;
+}
+
+canvas {
+    border: 1px black solid;
+    display: block;
+    border-radius: 4px;
+    background: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+h1,#petition-title{
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+
+#grey-overlay {
+    height: 300px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#erase-signature {
+    position: relative;
+    top: -89px;
+    min-width: 80px;
+    width : 25%;
+    height: 23px;
+    background: white;
+}
+
+
+
+#menu-overlay, #menu-container {
+    position: fixed;
+    display: inline;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1000;
+    margin-bottom: 10px;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+}
+
+#menu-container {
+    top: -300px;
+}
+
+
+#menu-overlay {
+    background: black;
+    opacity: 0.2;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+#menu-overlay.showmenu {
+    opacity: .6;
+}
+
+#cross {
+    position: absolute;
+    width: 28px;
+    top: 0;
+    z-index: 1000000000000000;
+    left: 10px;
+    top: 10px;
+}
+
+
+#body-container{
+    padding-top : 40px;
+}
+
+#password_err, #existing-email{
+    color : red;
+    margin-top : 30px;
+}
+
+
+
+.menu{
+    display: inline;
+    color: white;
+    z-index: 100000000;
+    position: relative;
+    font-size: 17px;
+    margin: 0 20px 0 20px;
+}
+
+#menu-ul a {
+    color:white;
+    z-index: 10000000000;
+}
+
+
+#already-signed, #profile-updated, #menu-ul, h1, p, #petition-title, #button, #erase-signature,  #signers-link, #existing-email, #edit-link, #delete-signature{
+    text-align: center;
+    font-family: monospace;
+}
+
+
+#signers-link, #edit-link, #delete-signature {
+    font-size: 35px;
+    display: block;
+    position : relative;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#already-signed, #profile-updated{
+    font-size: 30px;
+    animation-name: blinking;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinking{
+    0%{color:black;}
+    50%{color:rgb(112, 175, 212);}
+    100%{color:black;}
+}
+
+.head{
+    display: inline-block;
+    transform: translate(-50%, 0%);
+    position: relative;
+    left: 50%;
+}
+
+.input-field, #button, #gif1, #form, #img-canvas, #signers-link, #congrat-signature, #edit-link, #delete-signature{
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#img-canvas{
+    max-width: 610px;
+    width : 90%;
+}
+
+#gif1{
+    max-height: 400px;
+    max-width: 600px;
+    width: 90%;
+}
+
+
+#congrat-signature{
+    font-size: 18px;
+}
+
+#img-canvas{
+    background:white;
+    animation-name: blinking-border;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinking-border{
+    0%{border:3px rgb(112, 175, 212) dashed;}
+    70%{border:3px white dashed;}
+    100%{border:3px rgb(112, 175, 212) dashed;}
+}
+
+.input-field {
+    display: inline-block;
+}
+
+span{
+    color:rgb(112, 175, 212);
+}
+
+label p {
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+label input{
+    height: 18px;
+}
+
+
+
+.head label{
+    float: left;
+    margin : 0 10px 0 10px;
+}
+
+#form p{
+    margin-top: 5px;
+}
+
+#button{
+    min-width: 80px;
+    width : 25%;
+    height: 33px;
+    background: white;
+    min-width: 110px;
+}
+
+#button, #erase-signature, input {
+    border-radius: 4px;
+    border: 3px dashed rgb(112, 175, 212);
+}
+
+#erase-signature:hover, #button:hover{
+    border: 3px dashed white;
+    background: rgb(112, 175, 212);
+    color : white;
+}
+
+input:focus{
+    outline: none;
+}
+
+embed:focus {
+    outline: none;
+}
+
+#signers, span {
+    text-transform:capitalize;
+}
+
+#hamburger-gif{
+    display : none;
+}
+
+/*Register page*/
+.register{
+    margin-top: 30px;
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+}
+
+#advert{
+    margin-top: 30px;
+}
+
+
+/*signers city page*/
+#signers-city button{
+    border: none;
+    background: none;
+    color: #00f;
+    font-style: monospace;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.register input {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+/* Menu things */
+
+#hamburger{
+    width: 50px;
+    position: absolute;
+    z-index: 1000000000;
+    top : 5px;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+}
+
+
+
+
+/*Media queries*/
+@media all and (max-width: 610px) and (min-width: 50px) {
+    #already-signed, #profile-updated, #menu-ul, h1, p, #petition-title, #button, #erase-signature,  #signers-link, #existing-email, #edit-link, #delete-signature{
+        font-size: 4vw;
+    }
+    #menu-ul {
+        padding : 7px 0 0 0; margin: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1000000;
+        display: inline-grid;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #menu-ul li{
+        margin: 18px;
+        font-size: 6vw;
+    }
+
+
+    #canvas {
+        width :90%;
+    }
+    #menu-overlay{
+        height: 54px;
+    }
+    #hamburger{
+        display : inline;
+        position: fixed;
+    }
+    #grey-overlay{
+        height: 100%;
+        opacity : 0.85;
+    }
+    #menu-container{
+        top: -100%    ;
+        height: 100%;
+    }
+    #menu-container.show {
+        top: 0px;
+    }
+
+    #hamburger-container.hide{
+        display : none;
+    }
+    #hamburger-gif{
+        position: absolute;
+        bottom: 10%;
+        width: 88%;
+        left: 6%;
+        display: inline;
+    }
+    #menu-ul li:first-child{
+        padding-top: 38px;
+    }
+
+    /*h1{
+    margin-top: 96px;
+    }*/
+}

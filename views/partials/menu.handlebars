@@ -1,0 +1,27 @@
+<div id="menu-container">
+    <div id="grey-overlay">
+    </div>
+        <div id="menu-background">
+            <img id="cross" src="cross.svg"/>
+
+            <ul id="menu-ul">
+                {{#menu}}
+                {{#link}}<li class="menu"><a target="_blank" href="http://www.todayifoundout.com/index.php/2014/04/history-burritos/">More About Burritos</a></li>{{/link}}
+                {{#register}}<li class="menu"><a href="/register">Register</a></li>{{/register}}
+                {{#login}}<li class="menu"><a href="/login">Log In</a></li>{{/login}}
+                {{#back}}<li class="menu"><a href="/signers">Back</a></li>{{/back}}
+                {{#seesigners}}<li class="menu"><a href="/signers">See the signers</a></li>{{/seesigners}}
+                {{#signed}}<li class="menu"><a href="/signed">My signature</a></li>{{/signed}}
+                {{#edit}}<li class="menu"><a href="/edit">Edit your profile</a></li>{{/edit}}
+                {{#logout}}<li class="menu"><a href="/logout">Log Out</a></li>{{/logout}}
+                {{/menu}}
+            </ul>
+        </div>
+
+    <img id="hamburger-gif" src="https://media.giphy.com/media/l3V0BVDTyuMzwpS1i/giphy.gif?response_id=591eb254b4ed3c30bdd4654f" alt="">
+</div>
+
+    <header id="hamburger-container">
+        <div id="menu-overlay"></div>
+        <img id="hamburger" src="hamburgermenu.svg"/>
+    </header>

@@ -1,0 +1,7 @@
+{{> gif}}
+
+<h1>We the undersigned citizens of {{city}} demand that the majestic burrito becomes a public good !</h1>
+
+{{#results}}
+<p id="signers">{{#url}}<a target="_blank" href="{{.}}">{{/url}}{{first_name}} {{last_name}}</a> {{#age}}({{.}}){{/age}}</p>
+{{/results}}
