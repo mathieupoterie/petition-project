@@ -15,7 +15,9 @@ var session = require('express-session');
 var Store = require('connect-redis')(session);
 
 app.use(session({
-    store: new Store( process.env.REDIS_URL || {
+    store: new Store( process.env.REDIS_URL ? {
+        url : process.env.REDIS_URL
+    }: {
         host : 'localhost',
         port: 6379
     }),
