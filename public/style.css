@@ -26,11 +26,13 @@ h1,#petition-title{
 
 #erase-signature {
     position: relative;
-    top: -89px;
+    top: -65px;
+    left: 50%;
     min-width: 80px;
-    width : 25%;
+    width: 25%;
     height: 23px;
     background: white;
+    transform: translate(-50%);
 }
 
 
@@ -284,7 +286,7 @@ embed:focus {
 
 /*Media queries*/
 @media all and (max-width: 610px) and (min-width: 50px) {
-    #already-signed, #profile-updated, #menu-ul, h1, p, #petition-title, #button, #erase-signature,  #signers-link, #existing-email, #edit-link, #delete-signature{
+    #already-signed, #profile-updated, #menu-ul, h1, p, #petition-title, #button,  #signers-link, #existing-email, #edit-link, #delete-signature{
         font-size: 4vw;
     }
     #menu-ul {
