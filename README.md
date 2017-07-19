@@ -39,10 +39,3 @@ This petition is a simple website, where you can create an account by registerin
 
 
 <p>You can also edit your profile : that will cause an update of the database.</p>
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/26822768/28065361-83671e9c-6638-11e7-8329-15c8948692ef.gif"  width="800"/>
-</p>
-
-
-
