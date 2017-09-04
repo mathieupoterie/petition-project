@@ -5,7 +5,7 @@ https://burrito-petition.herokuapp.com
 
 ## Overview
 
-Petition - Full stack project where users can sign a petition and then access to all the sign-ups.
+Petition - Full stack project where users can sign a petition and then access to all the sign-ups !
 
 I really enjoyed this project, this was the first time I got into the module concept, having a deep understanding of a website structure.
 
